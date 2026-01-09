@@ -1,5 +1,6 @@
 import React from "react";
-import { DollarSign, Goal, BarChart, Settings, Mail } from "lucide-react";
+import { Mail, Instagram, Twitter, Linkedin } from "lucide-react";
+
 
 const Footer = () => {
   return (
@@ -66,15 +67,15 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Connect</h4>
             <div className="flex gap-4">
-              <div className="w-8 h-8 rounded-full bg-gray-800 hover:bg-(--color-primary-purple) transition-colors cursor-pointer"></div>
-              <div className="w-8 h-8 rounded-full bg-gray-800 hover:bg-(--color-primary-purple) transition-colors cursor-pointer"></div>
-              <div className="w-8 h-8 rounded-full bg-gray-800 hover:bg-(--color-primary-purple) transition-colors cursor-pointer"></div>
+              <div className="w-8 h-8 flex items-center justify-center p-1 rounded-full bg-gray-800 hover:bg-(--color-primary-purple) transition-colors cursor-pointer"><Instagram /></div>
+              <div className="w-8 h-8 flex items-center justify-center p-1 rounded-full bg-gray-800 hover:bg-(--color-primary-purple) transition-colors cursor-pointer"><Twitter /></div>
+              <div className="w-8 h-8 flex items-center justify-center p-1 rounded-full bg-gray-800 hover:bg-(--color-primary-purple) transition-colors cursor-pointer"><Linkedin /></div>
             </div>
           </div>
         </div>
 
         <div className="pt-8 text-center text-gray-600 text-xs">
-          &copy; {new Date().getFullYear()} MarkAI. All rights reserved.
+          &copy; 2026 MarkAI. All rights reserved.
         </div>
       </div>
     </footer>

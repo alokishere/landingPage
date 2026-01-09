@@ -47,7 +47,7 @@ const Nav = () => {
 
         {/* Buttons */}
         <div className="hidden md:flex gap-4 items-center">
-          <button className="text-sm font-medium hover:text-(--color-primary-purple) transition-colors">
+          <button className="btn px-5 py-2.5 rounded-xl text-sm font-medium hover:text-(--color-primary-purple) transition-colors">
             Log In
           </button>
           <button className="fillbtn px-5 py-2.5 rounded-xl text-sm font-medium shadow-lg shadow-purple-500/20">

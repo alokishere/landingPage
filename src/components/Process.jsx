@@ -1,5 +1,5 @@
 import React from "react";
-import { Layers, Zap, Database, TrendingUp, CheckCircle2 } from "lucide-react";
+import { Layers, Zap, TrendingUp, CheckCircle2 } from "lucide-react";
 
 const Process = () => {
   return (

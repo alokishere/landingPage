@@ -6,12 +6,13 @@ import {
   BarChart3,
   PenTool,
   Search,
+  ArrowRight,
 } from "lucide-react";
 
 const FeatureCard = ({ icon: Icon, title, description, colorClass }) => (
-  <div className="bg-white p-8 rounded-2xl border border-(--color-border-light) shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+  <div className="relative bg-white p-8 rounded-2xl border border-(--color-border-light) shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
     <div
-      className={`w-14 h-14 rounded-xl ${colorClass} bg-opacity-10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
+      className={`w-14 h-14 rounded-xl ${Icon} bg-opacity-10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
     >
       <Icon className={`w-7 h-7 ${colorClass.replace("bg-", "text-")}`} />
     </div>
@@ -21,9 +22,10 @@ const FeatureCard = ({ icon: Icon, title, description, colorClass }) => (
     <p className="text-(--color-text-secondary) mb-4">{description}</p>
     <a
       href="#"
-      className="font-medium text-(--color-primary-purple) hover:text-(--color-accent-violet) flex items-center gap-1 text-sm"
+      className="absolute bottom-4 left-8 font-medium text-(--color-primary-purple) hover:text-(--color-accent-violet) flex items-center gap-1 text-sm"
     >
       Learn More
+     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
     </a>
   </div>
 );
