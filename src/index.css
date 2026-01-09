@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+
+:root {
+  /* PRIMARY COLORS - Main Brand Identity */
+  --color-primary-purple: #6C63FF;
+  --color-primary-teal: #00C9A7;
+  
+  /* GRADIENT - Primary Brand Gradient */
+  --gradient-primary: linear-gradient(135deg, #6C63FF 0%, #00C9A7 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #5B52EE 0%, #00B896 100%);
+  
+  /* ACCENT COLORS - Interactive Elements */
+  --color-accent-blue: #4F46E5;
+  --color-accent-violet: #8B5CF6;
+  --color-accent-green: #10B981;
+
+  /* NEUTRAL COLORS - Backgrounds & Text */
+  --color-bg-primary: #F9FAFB;
+  --color-bg-secondary: #FFFFFF;
+  --color-bg-dark: #1F2937;
+
+   /* TEXT COLORS - Typography Hierarchy */
+  --color-text-primary: #111827;
+  --color-text-secondary: #6B7280;
+  --color-text-tertiary: #9CA3AF;
+  --color-text-white: #FFFFFF;
+
+   /* BORDER COLORS */
+  --color-border-light: #E5E7EB;
+  --color-border-medium: #D1D5DB;
+
+    
+  /* GRADIENT VARIATIONS */
+  --gradient-hero-bg: radial-gradient(circle at top right, rgba(108, 99, 255, 0.05) 0%, transparent 50%);
+  --gradient-section-bg: linear-gradient(135deg, rgba(108, 99, 255, 0.05) 0%, rgba(0, 201, 167, 0.05) 100%);
+  --gradient-cta-bg: linear-gradient(135deg, #6C63FF 0%, #00C9A7 100%);
+  --gradient-card-border: linear-gradient(135deg, #6C63FF 0%, #00C9A7 100%);
+  
+  /* TEXT GRADIENTS */
+  --gradient-text: linear-gradient(135deg, #6C63FF 0%, #00C9A7 100%);
+}
+
+.fillbtn{
+    background: var(--gradient-primary);
+    color: var(--color-text-white);
+}
+.btn{
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border-medium);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.fillbtn {
+    background: var(--gradient-primary);
+    color: var(--color-text-white);
+    transition: all 0.3s ease;
+}
+
+.fillbtn:hover {
+  background: var(--gradient-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+}
+
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
